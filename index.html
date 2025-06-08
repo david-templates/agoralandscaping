@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora Outdoor Solutions | Landscape & Garden Design Specialists in Meath</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Premium landscape design and garden construction specialists serving Meath and Leinster. Creating bespoke outdoor living spaces for residential and commercial clients.">
+    <meta name="keywords" content="landscape design, garden maintenance, outdoor living spaces, composite decking, paving, pergolas, Navan, Meath, Leinster">
+    <meta name="author" content="Agora Outdoor Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agoraoutdoorsolutions.ie/">
+    <meta property="og:title" content="Agora Outdoor Solutions | Landscape & Garden Design Specialists">
+    <meta property="og:description" content="Premium landscape design and garden construction specialists serving Meath and Leinster. Creating bespoke outdoor living spaces tailored to your lifestyle.">
+    <meta property="og:image" content="favicon.ico">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agoraoutdoorsolutions.ie/">
+    <meta property="twitter:title" content="Agora Outdoor Solutions | Landscape & Garden Design Specialists">
+    <meta property="twitter:description" content="Premium landscape design and garden construction specialists serving Meath and Leinster. Creating bespoke outdoor living spaces tailored to your lifestyle.">
+    <meta property="twitter:image" content="favicon.ico">  
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Fix for viewport height on mobile browsers -->
+    <script>
+        // Calculate viewport height once when the page loads
+        let vh = window.innerHeight * 0.01;
+        // Set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
+        // No resize event listener - fixed height based on initial page load
+    </script>
+    
+    <style>
+        /* Use the custom --vh variable instead of vh units */
+        .hero {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') no-repeat center center/cover !important;
+        }
+        
+        /* Add this for any other elements that use vh units */
+        .thank-you-container {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Agora Outdoor Solutions</h1>
+                <p>LANDSCAPE SPECIALISTS</p>
+            </div>
+            <div class="mobile-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Expert Landscape & Garden Design in Meath</h2>
+                <p>Creating bespoke outdoor living spaces for residential and commercial clients</p>
+                <a href="#contact" class="cta-button">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Agora Outdoor Solutions</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Agora Outdoor Solutions, we specialise in creating bespoke outdoor living spaces that enhance and complement your lifestyle. Our team of skilled professionals brings creativity and attention to detail to every project.</p>
+                    <p>Based in Navan, Co. Meath, we serve clients throughout the Leinster region with quality craftsmanship, innovative design, and exceptional results. Whether you're looking for complete landscape transformation or specific garden features, we're committed to exceeding your expectations.</p>
+                </div>
+                <div class="values">
+                    <div class="value-item">
+                        <h3>Bespoke Design</h3>
+                        <p>Tailored outdoor environments designed around your specific needs</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Quality</h3>
+                        <p>Premium materials and craftsmanship for lasting outdoor spaces</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Full Service</h3>
+                        <p>From design to construction and ongoing maintenance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading light">
+                <h2>Our Services</h2>
+                <div class="separator light"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Landscape Design & Construction</h3>
+                    <p>Comprehensive landscape design and construction services creating tailored outdoor environments for families and businesses</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Gardening & Maintenance</h3>
+                    <p>Professional installation of roll-out lawns and ongoing maintenance programs to keep your outdoor spaces vibrant</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3>Custom Outdoor Features</h3>
+                    <p>Bespoke outdoor features including composite decking, paving, and pergolas designed for year-round enjoyment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Recent Projects</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/landscape1.jpg" alt="Modern Landscape Design">
+                    <div class="portfolio-overlay">
+                        <h3>Landscape Design</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/landscape2.jpg" alt="Modern Landscape Design">
+                    <div class="portfolio-overlay">
+                        <h3>Landscape Design</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/landscape3.jpg" alt="Modern Landscape Design">
+                    <div class="portfolio-overlay">
+                        <h3>Landscape Design</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-heading light">
+                <h2>What Our Clients Say</h2>
+                <div class="separator light"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="quote">"Had my landscape done by Gareth & the Team. They were absolutely brilliant, did it to perfection and left the place spotless. Everything was as I wanted, I highly recommend Agora Outdoor Solutions!"</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Aoileann Ni Cuillin</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"100% would recommend. The landscape was done on time and they did a fantastic job. Always on hand to help if we had questions."</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Garry Ward</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Prompt and attentive. Came out within 24 hours to quote for a landscape transformation, very informative, detailed and considerate."</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Fola O'Grady</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Get Your Free Consultation</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>18 Cois Glaisín Rise, Johnstown, Navan, Co. Meath, C15 W7RX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+353 83 459 7277</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>agoraoutdoorsolutions@gmail.com</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Free Consultation</h3>
+                    <form action="https://formspree.io/f/" method="POST">
+                        <input type="hidden" name="_subject" value="New Consultation Request from Agora Outdoor Solutions Website">
+                        <input type="hidden" name="_next" value="https://agoraoutdoorsolutions.ie/thanks.html">
+                        <!-- Honeypot field to prevent spam -->
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="landscape-design">Landscape Design & Construction</option>
+                                <option value="gardening">Gardening & Maintenance</option>
+                                <option value="outdoor-features">Custom Outdoor Features</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Agora Outdoor Solutions</h2>
+                    <p>Premium landscape design in Meath & Leinster</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/agoraoutdoorsolutions" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/agoraoutdoorsolutions" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Agora Outdoor Solutions. All Rights Reserved.</p>
+                <div class="attribution">
+                    <p>Website designed by <a href="https://jumpseo.ie" target="_blank" class="jumpseo-link">JumpSEO</a></p>
+                    <a href="https://www.instagram.com/jump.seo" target="_blank" class="attribution-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to update current year in the footer -->
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbar = document.getElementById('navbar');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            if (menuToggle && navbar) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navbar.classList.toggle('active');
+                    
+                    // Toggle overlay
+                    if (menuOverlay) {
+                        if (navbar.classList.contains('active')) {
+                            menuOverlay.style.opacity = '1';
+                            menuOverlay.style.visibility = 'visible';
+                        } else {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    }
+                });
+                
+                // Close menu when clicking on a nav link or overlay
+                const navLinks = navbar.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        
+                        if (menuOverlay) {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    });
+                });
+                
+                // Close menu when clicking on overlay
+                if (menuOverlay) {
+                    menuOverlay.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        this.style.opacity = '0';
+                        this.style.visibility = 'hidden';
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
